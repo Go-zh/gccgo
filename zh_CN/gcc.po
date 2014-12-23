@@ -14010,22 +14010,22 @@ msgstr "计算出的值未被使用"
 #: go/gofrontend/expressions.cc:823
 #, fuzzy
 msgid "invalid use of type"
-msgstr "对未定义类型%<%s %E%>的使用无效"
+msgstr "类型使用无效"
 
 #: go/gofrontend/expressions.cc:2713 go/gofrontend/expressions.cc:2779
 #: go/gofrontend/expressions.cc:2795
 #, fuzzy
 msgid "constant refers to itself"
-msgstr "inlined_to pointer 指向自身"
+msgstr "常数的值依赖自身"
 
 #: go/gofrontend/expressions.cc:4152
 msgid "expected numeric type"
-msgstr "需要数字类型"
+msgstr "需要数值类型"
 
 #: go/gofrontend/expressions.cc:4157
 #, fuzzy
 msgid "expected boolean type"
-msgstr "需要整数或布尔类型"
+msgstr "需要布尔类型"
 
 #: go/gofrontend/expressions.cc:4163
 msgid "expected integer or boolean type"
