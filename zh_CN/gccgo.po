@@ -1,0 +1,468 @@
+#: go/gofrontend/expressions.cc:104 c-family/c-common.c:1811 cp/cvt.c:1164
+#: cp/cvt.c:1412
+#, gcc-internal-format
+msgid "value computed is not used"
+msgstr "计算出的值未被使用"
+
+#: go/gofrontend/expressions.cc:823
+#, fuzzy
+msgid "invalid use of type"
+msgstr "对未定义类型%<%s %E%>的使用无效"
+
+#: go/gofrontend/expressions.cc:2713 go/gofrontend/expressions.cc:2779
+#: go/gofrontend/expressions.cc:2795
+#, fuzzy
+msgid "constant refers to itself"
+msgstr "inlined_to pointer 指向自身"
+
+#: go/gofrontend/expressions.cc:4152
+msgid "expected numeric type"
+msgstr "需要数字类型"
+
+#: go/gofrontend/expressions.cc:4157
+#, fuzzy
+msgid "expected boolean type"
+msgstr "需要整数或布尔类型"
+
+#: go/gofrontend/expressions.cc:4163
+msgid "expected integer or boolean type"
+msgstr "需要整数或布尔类型"
+
+#: go/gofrontend/expressions.cc:4170
+#, fuzzy
+msgid "invalid operand for unary %<&%>"
+msgstr "代码‘%c’的操作数无效"
+
+#: go/gofrontend/expressions.cc:4182
+msgid "expected pointer"
+msgstr "需要指针"
+
+#: go/gofrontend/expressions.cc:5925
+#, fuzzy
+msgid "invalid comparison of nil with nil"
+msgstr "gimple 条件中比较代码无效"
+
+#: go/gofrontend/expressions.cc:5931 go/gofrontend/expressions.cc:5949
+#, fuzzy
+msgid "incompatible types in binary expression"
+msgstr "二元表达式中类型不匹配"
+
+#: go/gofrontend/expressions.cc:5969
+#, fuzzy
+msgid "integer division by zero"
+msgstr "被零除"
+
+#: go/gofrontend/expressions.cc:5977
+#, fuzzy
+msgid "shift of non-integer operand"
+msgstr "非整数操作数使用了操作数代码‘%c’"
+
+#: go/gofrontend/expressions.cc:5982 go/gofrontend/expressions.cc:5990
+#, fuzzy
+msgid "shift count not unsigned integer"
+msgstr "switch 语句中的值不是一个整数"
+
+#: go/gofrontend/expressions.cc:5995
+msgid "negative shift count"
+msgstr "移位次数为负"
+
+#: go/gofrontend/expressions.cc:6654
+msgid "object is not a method"
+msgstr "对象不是一个方法"
+
+#: go/gofrontend/expressions.cc:6671
+msgid "method type does not match object type"
+msgstr "方法类型不匹配对象类型"
+
+#: go/gofrontend/expressions.cc:7156
+#, fuzzy
+msgid "invalid use of %<...%> with builtin function"
+msgstr "内建函数实参无效"
+
+#: go/gofrontend/expressions.cc:7167
+#, fuzzy
+msgid "invalid use of method value as argument of Offsetof"
+msgstr "使用模板名%qE时不带实参表无效"
+
+#: go/gofrontend/expressions.cc:7181
+msgid "argument of Offsetof implies indirection of an embedded field"
+msgstr ""
+
+#: go/gofrontend/expressions.cc:7206 go/gofrontend/expressions.cc:7267
+#: go/gofrontend/expressions.cc:7342 go/gofrontend/expressions.cc:8139
+#: go/gofrontend/expressions.cc:8286 go/gofrontend/expressions.cc:8329
+#: go/gofrontend/expressions.cc:8385 go/gofrontend/expressions.cc:9633
+#: go/gofrontend/expressions.cc:9652
+msgid "not enough arguments"
+msgstr "实参太少"
+
+#: go/gofrontend/expressions.cc:7208 go/gofrontend/expressions.cc:7269
+#: go/gofrontend/expressions.cc:8144 go/gofrontend/expressions.cc:8269
+#: go/gofrontend/expressions.cc:8291 go/gofrontend/expressions.cc:8334
+#: go/gofrontend/expressions.cc:8387 go/gofrontend/expressions.cc:9328
+#: go/gofrontend/expressions.cc:9638 go/gofrontend/expressions.cc:9659
+msgid "too many arguments"
+msgstr "实参太多"
+
+#: go/gofrontend/expressions.cc:7271
+#, fuzzy
+msgid "argument 1 must be a map"
+msgstr "实参必须是常数"
+
+#: go/gofrontend/expressions.cc:7368
+#, fuzzy
+msgid "invalid type for make function"
+msgstr "函数%q+#D的抽象返回类型无效"
+
+#: go/gofrontend/expressions.cc:7384
+#, fuzzy
+msgid "length required when allocating a slice"
+msgstr "生成切片时长度错误"
+
+#: go/gofrontend/expressions.cc:7423
+msgid "len larger than cap"
+msgstr ""
+
+#: go/gofrontend/expressions.cc:7435
+#, fuzzy
+msgid "too many arguments to make"
+msgstr "%qE实参太多"
+
+#: go/gofrontend/expressions.cc:8188
+#, fuzzy
+msgid "argument must be array or slice or channel"
+msgstr "右实参必须是一个切片或字符串"
+
+#: go/gofrontend/expressions.cc:8198
+msgid "argument must be string or array or slice or map or channel"
+msgstr ""
+
+#: go/gofrontend/expressions.cc:8244
+#, fuzzy
+msgid "unsupported argument type to builtin function"
+msgstr "%<__builtin_frame_address%>的实参不受支持"
+
+#: go/gofrontend/expressions.cc:8255
+msgid "argument must be channel"
+msgstr "实参必须是通道"
+
+#: go/gofrontend/expressions.cc:8257
+#, fuzzy
+msgid "cannot close receive-only channel"
+msgstr "间接引用操作数无效"
+
+#: go/gofrontend/expressions.cc:8277
+#, fuzzy
+msgid "argument must be a field reference"
+msgstr "%3$L处内建函数‘%2$s’的实参‘%1$s’必须是 %4$s"
+
+#: go/gofrontend/expressions.cc:8304
+msgid "left argument must be a slice"
+msgstr "左实参必须是一个切片"
+
+#: go/gofrontend/expressions.cc:8312
+msgid "element types must be the same"
+msgstr "元素类型必须一样"
+
+#: go/gofrontend/expressions.cc:8317
+#, fuzzy
+msgid "first argument must be []byte"
+msgstr "左实参必须是一个切片"
+
+#: go/gofrontend/expressions.cc:8320
+#, fuzzy
+msgid "second argument must be slice or string"
+msgstr "右实参必须是一个切片或字符串"
+
+#: go/gofrontend/expressions.cc:8361
+#, fuzzy
+msgid "argument 2 has invalid type"
+msgstr "第 %u 个参数类型为 void"
+
+#: go/gofrontend/expressions.cc:8377
+msgid "argument must have complex type"
+msgstr "实参必须具有复数类型"
+
+#: go/gofrontend/expressions.cc:8395
+msgid "complex arguments must have identical types"
+msgstr "复数实参必须具有相同的类型"
+
+#: go/gofrontend/expressions.cc:8397
+msgid "complex arguments must have floating-point type"
+msgstr "复数实参必须具有浮点类型"
+
+#: go/gofrontend/expressions.cc:9152 go/gofrontend/expressions.cc:9586
+#: go/gofrontend/expressions.cc:10082
+msgid "expected function"
+msgstr "需要函数"
+
+#: go/gofrontend/expressions.cc:9332
+#, fuzzy
+msgid "invalid use of %<...%> with non-slice"
+msgstr "在文件作用域使用%<this%>无效"
+
+#: go/gofrontend/expressions.cc:9605
+msgid "incompatible type for receiver"
+msgstr "接收器类型不兼容"
+
+#: go/gofrontend/expressions.cc:9623
+#, fuzzy
+msgid "invalid use of %<...%> calling non-variadic function"
+msgstr "在非成员函数中使用%<this%>无效"
+
+#: go/gofrontend/expressions.cc:10091 go/gofrontend/expressions.cc:10105
+msgid "number of results does not match number of values"
+msgstr "返回值的数量不匹配值的数量"
+
+#: go/gofrontend/expressions.cc:10458 go/gofrontend/expressions.cc:10983
+msgid "index must be integer"
+msgstr "索引必须是整数"
+
+#: go/gofrontend/expressions.cc:10466 go/gofrontend/expressions.cc:10991
+msgid "slice end must be integer"
+msgstr "切片结尾必须是整数"
+
+#: go/gofrontend/expressions.cc:10474
+#, fuzzy
+msgid "slice capacity must be integer"
+msgstr "切片结尾必须是整数"
+
+#: go/gofrontend/expressions.cc:10524 go/gofrontend/expressions.cc:11022
+msgid "inverted slice range"
+msgstr ""
+
+#: go/gofrontend/expressions.cc:10567
+msgid "slice of unaddressable value"
+msgstr ""
+
+#: go/gofrontend/expressions.cc:11228
+msgid "incompatible type for map index"
+msgstr "映射索引类型不兼容"
+
+#: go/gofrontend/expressions.cc:11658
+#, fuzzy
+msgid "expected interface or pointer to interface"
+msgstr "%<delete%>的参数类型应为指针而非%q#T"
+
+#: go/gofrontend/expressions.cc:12395
+#, fuzzy
+msgid "too many expressions for struct"
+msgstr "提供给格式字符串的实参太多"
+
+#: go/gofrontend/expressions.cc:12408
+#, fuzzy
+msgid "too few expressions for struct"
+msgstr "格式字符串实参太少"
+
+#: go/gofrontend/expressions.cc:14179 go/gofrontend/statements.cc:1562
+msgid "type assertion only valid for interface types"
+msgstr ""
+
+#: go/gofrontend/expressions.cc:14191
+msgid "impossible type assertion: type does not implement interface"
+msgstr ""
+
+#: go/gofrontend/expressions.cc:14362 go/gofrontend/statements.cc:1410
+msgid "expected channel"
+msgstr "需要通道"
+
+#: go/gofrontend/expressions.cc:14367 go/gofrontend/statements.cc:1415
+msgid "invalid receive on send-only channel"
+msgstr ""
+
+#: go/gofrontend/parse.cc:3012
+msgid "parentheses required around this composite literal to avoid parsing ambiguity"
+msgstr ""
+
+#: go/gofrontend/parse.cc:4564
+msgid "cannot fallthrough final case in switch"
+msgstr ""
+
+#: go/gofrontend/statements.cc:601
+#, fuzzy
+msgid "invalid left hand side of assignment"
+msgstr "在左操作数边转化 SSA_NAME。"
+
+#: go/gofrontend/statements.cc:612 go/gofrontend/statements.cc:998
+msgid "use of untyped nil"
+msgstr ""
+
+#: go/gofrontend/statements.cc:1128
+msgid "expected map index on right hand side"
+msgstr ""
+
+#: go/gofrontend/statements.cc:1277
+#, fuzzy
+msgid "expected map index on left hand side"
+msgstr "需要行尾"
+
+#: go/gofrontend/statements.cc:2654 go/gofrontend/statements.cc:2683
+#, fuzzy
+msgid "not enough arguments to return"
+msgstr "实参太少"
+
+#: go/gofrontend/statements.cc:2662
+#, fuzzy
+msgid "return with value in function with no return type"
+msgstr "在有返回值的的函数中，%<return%>不带返回值"
+
+#: go/gofrontend/statements.cc:2689
+msgid "too many values in return statement"
+msgstr "返回语句中值太多"
+
+#: go/gofrontend/statements.cc:3189
+msgid "expected boolean expression"
+msgstr "需要布尔表达式"
+
+#: go/gofrontend/statements.cc:4280
+msgid "cannot type switch on non-interface value"
+msgstr ""
+
+#: go/gofrontend/statements.cc:4418
+#, fuzzy
+msgid "incompatible types in send"
+msgstr "指针目标类型在 C++ 中不兼容"
+
+#: go/gofrontend/statements.cc:4423
+#, fuzzy
+msgid "invalid send on receive-only channel"
+msgstr "间接引用操作数无效"
+
+#: go/gofrontend/statements.cc:5340
+msgid "too many variables for range clause with channel"
+msgstr ""
+
+#: go/gofrontend/statements.cc:5347
+#, fuzzy
+msgid "range clause must have array, slice, string, map, or channel type"
+msgstr "右实参必须是一个切片或字符串"
+
+#: go/gofrontend/types.cc:514
+#, fuzzy
+msgid "invalid comparison of non-ordered type"
+msgstr "gimple 条件中比较代码无效"
+
+#: go/gofrontend/types.cc:530
+#, fuzzy
+msgid "slice can only be compared to nil"
+msgstr "重复的类只会被编译一次"
+
+#: go/gofrontend/types.cc:532
+#, fuzzy
+msgid "map can only be compared to nil"
+msgstr "重复的类只会被编译一次"
+
+#: go/gofrontend/types.cc:534
+#, fuzzy
+msgid "func can only be compared to nil"
+msgstr "重复的类只会被编译一次"
+
+#: go/gofrontend/types.cc:540
+#, fuzzy, c-format
+msgid "invalid operation (%s)"
+msgstr "%%R 的操作数无效"
+
+#: go/gofrontend/types.cc:563
+#, fuzzy
+msgid "invalid comparison of non-comparable type"
+msgstr "gimple 条件中比较代码无效"
+
+#: go/gofrontend/types.cc:581
+#, fuzzy
+msgid "invalid comparison of non-comparable struct"
+msgstr "gimple 条件中比较代码无效"
+
+#: go/gofrontend/types.cc:592
+#, fuzzy
+msgid "invalid comparison of non-comparable array"
+msgstr "对非左值数组的使用无效"
+
+#: go/gofrontend/types.cc:623
+#, fuzzy
+msgid "multiple-value function call in single-value context"
+msgstr "%qD的声明中类名无效"
+
+#: go/gofrontend/types.cc:710
+msgid "need explicit conversion"
+msgstr "需要显式转换"
+
+#: go/gofrontend/types.cc:717
+#, c-format
+msgid "cannot use type %s as type %s"
+msgstr "不能将类型 %s 用作 %s"
+
+#: go/gofrontend/types.cc:3328
+msgid "different receiver types"
+msgstr "不同的接收器类型"
+
+#: go/gofrontend/types.cc:3348 go/gofrontend/types.cc:3361
+#: go/gofrontend/types.cc:3376
+msgid "different number of parameters"
+msgstr "形参数量不同"
+
+#: go/gofrontend/types.cc:3369
+msgid "different parameter types"
+msgstr "形参类型不同"
+
+#: go/gofrontend/types.cc:3384
+msgid "different varargs"
+msgstr "不同的可变参数"
+
+#: go/gofrontend/types.cc:3393 go/gofrontend/types.cc:3406
+#: go/gofrontend/types.cc:3421
+#, fuzzy
+msgid "different number of results"
+msgstr "形参数量不同"
+
+#: go/gofrontend/types.cc:3414
+#, fuzzy
+msgid "different result types"
+msgstr "不同的接收器类型"
+
+#: go/gofrontend/types.cc:4607
+#, c-format
+msgid "implicit assignment of %s%s%s hidden field %s%s%s"
+msgstr "对%s%s%s的隐式赋值隐藏了字段%s%s%s"
+
+#: go/gofrontend/types.cc:7060
+#, c-format
+msgid "need explicit conversion; missing method %s%s%s"
+msgstr "需要显式转换；缺少方法%s%s%s"
+
+#: go/gofrontend/types.cc:7077 go/gofrontend/types.cc:7219
+#, c-format
+msgid "incompatible type for method %s%s%s"
+msgstr "方法%s%s%s类型不兼容"
+
+#: go/gofrontend/types.cc:7081 go/gofrontend/types.cc:7223
+#, fuzzy, c-format
+msgid "incompatible type for method %s%s%s (%s)"
+msgstr "方法%s%s%s类型不兼容"
+
+#: go/gofrontend/types.cc:7160 go/gofrontend/types.cc:7173
+msgid "pointer to interface type has no methods"
+msgstr ""
+
+#: go/gofrontend/types.cc:7162 go/gofrontend/types.cc:7175
+msgid "type has no methods"
+msgstr "类型没有方法"
+
+#: go/gofrontend/types.cc:7196
+#, c-format
+msgid "ambiguous method %s%s%s"
+msgstr "有歧义的方法%s%s%s"
+
+#: go/gofrontend/types.cc:7199
+#, c-format
+msgid "missing method %s%s%s"
+msgstr "缺少方法%s%s%s"
+
+#: go/gofrontend/types.cc:7240
+#, fuzzy, c-format
+msgid "method %s%s%s requires a pointer receiver"
+msgstr "方法%s%s%s需要一个指针"
+
+#: go/gofrontend/types.cc:7258
+#, fuzzy, c-format
+msgid "method %s%s%s is marked go:nointerface"
+msgstr "方法%s%s%s需要一个指针"
