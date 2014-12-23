@@ -1,5 +1,8 @@
 本代码库用于翻译 gccgo 的错误提示信息。
 
+请翻译 zh_CN/gccgo.po，而不是 zh_CN/gcc.po，因为后者太大了， GitHub 不能显示它的内容。
+我们可以定期把 gccgo.po 的改动合并入 gcc.po，然后提交给 Translation Project。
+
 翻译原则：
 为了提供更贴切的翻译，我们要在 tests 目录下创建测试程序，触发 gccgo 的每个错误，然后
 再根据实际输出进行意译。
