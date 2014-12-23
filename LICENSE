@@ -1,0 +1,12 @@
+为了保证满足 Translation Project 的要求，本代码库要求所有所有翻译者
+遵循 TP 对于翻译者的要求，参看：
+http://translationproject.org/html/whydisclaim.html
+大体的意思就是翻译者必须放弃对所做翻译的版权。
+
+要求贡献者放弃版权对于翻译本身来说没啥问题，所以 zh_CN 目录下的 po 文件
+的所有改动必须明确地遵循这个原则。
+在最后提交我们的 po 修改的时候，可能需要对 po 文件做出过改动的贡献者签署
+FSF Disclaimer。但是我还不确定这个是否是必要的步骤，但是在对 po 做出改动
+前请确定你可以接受并签署 FSF Disclaimer (https://my.fsf.org/civicrm/profile/create?gid=91)。
+
+其余的目录我们将继续使用 Go 的 BSD 授权，参见 http://golang.org/LICENSE.
