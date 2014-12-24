@@ -29,13 +29,8 @@
 生成的测试文件的头部注释样例:
 
 	//po:MsgId "ambiguous method %s%s%s"
-	//
-	//PoMessage {
-	//	#: go/gofrontend/types.cc:7196
-	//	#, c-format
-	//	msgid "ambiguous method %s%s%s\n"
-	//	msgstr "有歧义的方法%s%s%s\n"
-	//}
+	//po:MsgStr "有歧义的方法%s%s%s"
+	//po:MsgStr ""
 
 	package p
 
@@ -236,28 +231,33 @@ func updateHeaderComments(msg po.Message, data []byte) (newData []byte) {
 样例:
 
 	//po:MsgId "value computed is not used"
-	//
-	//PoMessage {
-	//	#: go/gofrontend/types.cc:7196
-	//	#, c-format
-	//	msgid "ambiguous method %s%s%s"
-	//	msgstr "有歧义的方法%s%s%s"
-	//}
+	//po:MsgStr ""
 */
 func genHeaderComments(msg po.Message) []byte {
 	var buf bytes.Buffer
 	fmt.Fprintf(&buf, "%s\n", genHeaderFirstLine(msg))
-	fmt.Fprintf(&buf, "//\n")
-	fmt.Fprintf(&buf, "//PoMessage {\n")
-	msgLines := strings.Split(msg.String(), "\n")
-	for i := 0; i < len(msgLines); i++ {
-		if msgLines[i] != "" {
-			fmt.Fprintf(&buf, "//\t%s\n", msgLines[i])
-		}
-	}
-	fmt.Fprintf(&buf, "//}\n")
-	fmt.Fprintf(&buf, "\n")
 
+	// 切割翻译后的字符串(可能多行)
+	msgStr := msg.MsgStr
+	msgStr = strings.Replace(msgStr, `\n`, "\n", -1)
+	msgStr = strings.TrimSpace(msgStr)
+	msgStrLines := strings.Split(msgStr, "\n")
+
+	// 删除尾部的空行
+	if n := len(msgStrLines); n > 0 && msgStrLines[n-1] == "" {
+		msgStrLines = msgStrLines[:n-1]
+	}
+
+	// 如果没有数据则, 新建一个空翻译
+	if len(msgStrLines) == 0 {
+		msgStrLines = []string{""}
+	}
+
+	// 输出翻译部分
+	for i := 0; i < len(msgStrLines); i++ {
+		fmt.Fprintf(&buf, "//po:MsgStr \"%s\"\n", msgStrLines[i])
+	}
+	fmt.Fprintf(&buf, "\n")
 	return buf.Bytes()
 }
 
