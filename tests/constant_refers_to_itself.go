@@ -1,1 +1,3 @@
-TODO
+package p
+
+const a = a
