@@ -119,6 +119,10 @@ func updateHeaderComments(msg po.Message, data []byte) (newData []byte) {
 		newData = headerComments
 		return
 	}
+	if !bytes.HasPrefix(data, []byte("//po:MsgId")) {
+		newData = append(headerComments, data...)
+		return
+	}
 	if idxDoc := bytes.Index(data, []byte("\n\n")); idxDoc >= 0 {
 		newData = append(headerComments, data[idxDoc:]...)
 		return
