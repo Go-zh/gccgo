@@ -11,6 +11,7 @@ import (
 	"log"
 	"os"
 	"path/filepath"
+	"sort"
 	"strings"
 	"unicode"
 
@@ -23,6 +24,12 @@ var (
 	newFileMap = make(map[string]bool)
 )
 
+type byMsgId []po.Message
+
+func (d byMsgId) Len() int           { return len(d) }
+func (d byMsgId) Less(i, j int) bool { return d[i].MsgId < d[j].MsgId }
+func (d byMsgId) Swap(i, j int)      { d[i], d[j] = d[j], d[i] }
+
 func main() {
 	scanTestFiles()
 
@@ -30,6 +37,8 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
+
+	sort.Sort(byMsgId(po.Messages))
 	for _, msg := range po.Messages {
 		genTestFile(msg)
 	}
@@ -49,10 +58,15 @@ func scanTestFiles() {
 }
 
 func printInvalidFiles() {
+	var invalidFiles []string
 	for filename, _ := range oldFileMap {
 		if _, ok := newFileMap[filename]; !ok {
-			fmt.Printf("invalid %v\n", filename)
+			invalidFiles = append(invalidFiles, filename)
 		}
+	}
+	sort.Strings(invalidFiles)
+	for i := 0; i < len(invalidFiles); i++ {
+		fmt.Printf("invalid %s%s\n", testsDir, invalidFiles[i])
 	}
 }
 
