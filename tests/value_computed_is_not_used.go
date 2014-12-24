@@ -7,3 +7,8 @@
 //	msgstr "计算出的值未被使用\n"
 //}
 
+package f
+
+func F() {
+	1
+}

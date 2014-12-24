@@ -7,3 +7,6 @@
 //	msgstr "常数的值依赖自身\n"
 //}
 
+package p
+
+const a = a

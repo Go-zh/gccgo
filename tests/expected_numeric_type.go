@@ -6,3 +6,8 @@
 //	msgstr "需要数值类型\n"
 //}
 
+package p
+
+func F() string {
+	return +"a"
+}

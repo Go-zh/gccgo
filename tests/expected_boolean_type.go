@@ -7,3 +7,8 @@
 //	msgstr "需要布尔类型\n"
 //}
 
+package p
+
+func F() int {
+	return !1
+}
