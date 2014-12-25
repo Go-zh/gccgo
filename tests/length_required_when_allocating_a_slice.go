@@ -1,3 +1,6 @@
 //po:MsgId "length required when allocating a slice"
-//po:MsgStr "生成切片时长度错误"
+//po:MsgStr "分配切片时必须提供长度参数"
 
+package p
+
+var x = make([]byte)
