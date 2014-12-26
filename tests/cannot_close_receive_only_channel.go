@@ -1,3 +1,10 @@
 //po:MsgId "cannot close receive-only channel"
-//po:MsgStr "间接引用操作数无效"
+//po:MsgStr "无法关闭只读信道"
 
+package p
+
+var x <-chan struct{}
+
+func F() {
+	close(x)
+}
