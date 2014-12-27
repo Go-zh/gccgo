@@ -1,5 +1,5 @@
 //po:MsgId "integer division by zero"
-//po:MsgStr "被零除"
+//po:MsgStr "被整数零除"
 
 package p
 

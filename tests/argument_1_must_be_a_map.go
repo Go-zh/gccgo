@@ -1,5 +1,5 @@
 //po:MsgId "argument 1 must be a map"
-//po:MsgStr "实参必须是常数"
+//po:MsgStr "第一个实参必须是个字典"
 
 package p
 
