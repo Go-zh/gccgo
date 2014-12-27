@@ -1,5 +1,5 @@
 //po:MsgId "argument of Offsetof implies indirection of an embedded field"
-//po:MsgStr ""
+//po:MsgStr "%<unsafe.Offsetof%>的参数字段并不直接包含于结构体内：至少要经过一级以指针形式内嵌的结构体"
 
 package p
 

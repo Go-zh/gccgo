@@ -1,5 +1,5 @@
 //po:MsgId "invalid comparison of nil with nil"
-//po:MsgStr "gimple 条件中比较代码无效"
+//po:MsgStr "两个未定型的无值无法比较"
 
 package p
 
