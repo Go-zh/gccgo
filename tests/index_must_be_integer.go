@@ -1,3 +1,8 @@
 //po:MsgId "index must be integer"
-//po:MsgStr "索引必须是整数"
+//po:MsgStr "下标必须是整数"
 
+package p
+
+var x []byte
+
+var y = x["a"]
