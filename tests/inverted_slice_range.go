@@ -1,5 +1,5 @@
 //po:MsgId "inverted slice range"
-//po:MsgStr "切片的范围结束端点在起始端点之前"
+//po:MsgStr "反转的切片范围"
 
 package p
 
