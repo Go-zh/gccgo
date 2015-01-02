@@ -1,5 +1,5 @@
 //po:MsgId "parentheses required around this composite literal to avoid parsing ambiguity"
-//po:MsgStr "为避免有歧义的语法分析，必须在用圆括号将这个复合字面括起来"
+//po:MsgStr "为避免语法解析时产生歧义，此复合字面必须用圆括号括起"
 
 package p
 
